@@ -19,6 +19,16 @@ public class PTra06_06 {
 		 * ■■■□□
 		 * ■■■■□
 		 */
-
+		System.out.println("-----------------------------------");
+		
+		for (int i = 0; i < 5; i++) {			//全体の繰り返し回数：5回  
+			for (int j = 0; j < i; j++) {		//■の表示個数
+				System.out.print("■");
+			}
+			for (int k = 0; k < 5 - i; k++) {	//□の表示個数
+				System.out.print("□");
+			}
+			System.out.print("\n");
+		}
 	}
 }

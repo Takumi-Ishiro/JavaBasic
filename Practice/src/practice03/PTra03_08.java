@@ -35,6 +35,22 @@ public class PTra03_08 {
 		 *
 		 * ※ プログラムは何行書いても良いです
 		 */
-
+		int daikin;
+		
+		switch (num){
+		  case 1 : System.out.println("オレンジジュースを購入しました");   
+		  daikin = 150;  
+		  break;
+		  case 2 : System.out.println("リンゴジュースを購入しました");   
+		  daikin = 160;     
+		  break;
+		  case 3 : System.out.println("コーヒーを購入しました");
+		  daikin = 200;
+		  break;
+		  default : System.out.println("不正な値が入力されました");
+		  daikin = 0;
+		  break;
+		}
+		System.out.println("所持金の残り：" + (1000 - daikin));
 	}
 }
