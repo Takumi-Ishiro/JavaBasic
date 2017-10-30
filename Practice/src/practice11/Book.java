@@ -7,13 +7,7 @@ package practice11;
  */
 import java.text.NumberFormat;
 
-/**
- * 本の情報を保持します
- * @author Rhizome
- *
- */
 public class Book {
-
 	/**
 	 * コンストラクタの定義。
 	 * 本の情報を予め指定してインスタンスを作成します
@@ -30,21 +24,28 @@ public class Book {
 		this.pageSize = pageSize;
 		this.publication = publication;
 	}
+	/**
+	 * 本の情報を保持します
+	 * @author Rhizome
+	 *
+	 */
+	
+		
+		/** 本のタイトル */
+		String title;
 
-	/** 本のタイトル */
-	String title;
+		/** 著者 */
+		String author;
 
-	/** 著者 */
-	String author;
+		/** 定価 */
+		int price;
 
-	/** 定価 */
-	int price;
+		/** ページ数 */
+		int pageSize;
 
-	/** ページ数 */
-	int pageSize;
+		/** 出版社 */
+		String publication;
 
-	/** 出版社 */
-	String publication;
 
 	/**
 	 * 本の情報を文字列で取得します
