@@ -7,6 +7,7 @@
 package practice17.ptra17;
 
 import practice17.common.ThrowExceptionUtil;
+import java.io.IOException;
 
 public class PTra17_02 {
 	public static void main(String[] args) {
@@ -25,8 +26,12 @@ public class PTra17_02 {
 		 * 以下の処理はコンパイルエラーになります。
 		 * ★ 適切な修正を行い、コンパイルエラーをなくしてください
 		 */
+		try {
 		String line = ThrowExceptionUtil.inputValue();
 
 		System.out.println(line);
+		}catch(IOException e) {
+			e.printStackTrace();		
+		}	
 	}
 }
