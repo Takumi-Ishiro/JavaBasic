@@ -6,6 +6,10 @@
  */
 package practice13.ptra13;
 
+import practice13.common.Item;
+import practice13.common.Slime;
+import practice13.common.SuperHero;
+
 public class PTra13_07 {
 
 	/*
@@ -16,19 +20,18 @@ public class PTra13_07 {
 
 		// ★ SuperHeroインスタンスとSlimeインスタンスを作成し、それぞれの名前に"勇者（装備あり）", "スライム"を設定してください
 		
-		practice13.common.SuperHero superHero = new practice13.common.SuperHero();
-		practice13.common.Slime slime = new practice13.common.Slime();
+		SuperHero superHero = new SuperHero();
+		Slime slime = new Slime();
 		
 		superHero.setName("勇者(装備あり)");
 		slime.setName("スライム");
 		
 		// ★ Itemクラスのインスタンスを作成し、("こんぼう", 4）をコンストラクタの引数にしてください
-		practice13.common.Item item = new practice13.common.Item("こんぼう", 4);
+		Item item = new Item("こんぼう", 4);
 
 		// ★ 作成したItemインスタンスをSuperHeroに持たせてください
 		
-		superHero.setItemName(item.getName());
-		superHero.setItemDamage(item.getDamage());
+		superHero.setEquipment(item);
 
 		/*
 		 * ★ SuperHeroとSlimeを、どちらかが体力０になるまで戦わせます
@@ -43,12 +46,14 @@ public class PTra13_07 {
 		while (flagSuperHero == false) {
 			
 			flagSlime = slime.damage(superHero.attack());
+			System.out.println(superHero.getName() + "の攻撃！");
 			if (flagSlime == true) {
 				
 				break;
 			}
 			
 			flagSuperHero = superHero.damage(slime.attack());
+			System.out.println(slime.getName() + "の攻撃！");
 			
 		}
 

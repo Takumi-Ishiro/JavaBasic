@@ -1,6 +1,6 @@
-package practice14.ptra14;
+package practice14.common;
 
-public class DBCourse implements practice14.common.Course {
+public class DBCourse implements Course {
 	
 	/*
 	 * ★ common.Courseを実装した、DBCourseクラスを作成してください

@@ -5,6 +5,7 @@ package practice11;
  *------------------------------------------------------------
  * Copyright(c) Rhizome Inc. All Rights Reserved.
  */
+import java.util.Scanner;
 
 public class PTra11_02 {
 	public static void main(String[] args) {
@@ -12,7 +13,26 @@ public class PTra11_02 {
 		// ★ ReadFileClassのクラスメソッドreadBookDataFile()を使い、本情報を取得します
 
 		 Book[] book = FileReaderClass.readBookDataFile();
-		 String[] array = new String[book.length];
+		 
+		 System.out.println("探したい本のタイトル（又はその一部）を入力してください");
+		 Scanner scanner = new Scanner(System.in);
+		 String line = scanner.nextLine();
+		
+		 int count = 0;
+		 
+		 for (Book list : book) {
+			 if (list.title.indexOf(line) >= 0) {
+				 System.out.println(list.dispBookInfo());
+			 } else {
+				 count++;
+			 }
+		 }
+		 
+		 if (count == book.length) {
+			 System.out.println("検索結果は0件でした。");
+		 }
+		 //無駄が多いため書き直し
+		/* String[] array = new String[book.length];
 		 
 		 for (int i = 0; i < book.length; i++) {
 			 array[i] = book[i].title;						 
@@ -38,6 +58,6 @@ public class PTra11_02 {
 		}	
 		
 		if (count == array.length)
-			System.out.println("検索の結果は0件でした。");
+			System.out.println("検索の結果は0件でした。");*/
 	}
 }

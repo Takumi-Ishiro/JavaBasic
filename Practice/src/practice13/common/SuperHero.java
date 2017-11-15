@@ -2,37 +2,24 @@ package practice13.common;
 
 public class SuperHero extends Hero {
 	
-	private String name;
-	private int damage;
-	
-	Item equipment = new Item(name, damage);
-	
+	private Item equipment;
+
 	public int attack() {
 	
-		int plusPower = super.attack() + equipment.getDamage();
+		int plusPower = super.attack() + this.equipment.getDamage();
 		return plusPower;
 	}
 	
-	public void setItemName(String name) {
+	public void setEquipment(Item equipment) {
 		
-		this.name = name;
-		
-	}
-	public void setItemDamage(int damage) {
-		
-		this.damage = damage;
+		this.equipment = equipment;
 		
 	}
-	
-	public String getItemName() {
+
+	public Item getEquipment() {
 		
-		return this.name;
-		
-	}
-	
-	public int getItemDamage() {
-		
-		return this.damage;
+		return this.equipment;
 		
 	}
+
 }

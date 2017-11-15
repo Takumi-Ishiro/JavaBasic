@@ -20,13 +20,22 @@ public class PTra16_02 {
 
 		// ★ 上記基本型を、それぞれのラッパークラスに代入してください
 		
-		Boolean bW = new Boolean(true);
-		Byte byW = 100;
-		Short sW = 300;
-		Character cW = '日';
-		Integer iW = 1000;
-		Long lW = 2000L;
-		Float fW = 3.14F;
-		Double dW = 453.592;
+		Boolean bW = b;
+		Byte byW = by;
+		Short sW = s;
+		Character cW = c;
+		Integer iW = i;
+		Long lW = l;
+		Float fW = f;
+		Double dW = d;
+		
+		System.out.println(bW);
+		System.out.println(byW);
+		System.out.println(sW);
+		System.out.println(cW);
+		System.out.println(iW);
+		System.out.println(lW);
+		System.out.println(fW);
+		System.out.println(dW);
 	}
 }

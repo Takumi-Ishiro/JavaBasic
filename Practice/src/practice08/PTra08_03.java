@@ -13,9 +13,7 @@ public class PTra08_03 {
 		int number = new java.util.Random().nextInt(101);
 
 		// ★ 変数resultを宣言し、メソッドisEvenNumberを（変数number）で呼び出した結果を代入してください
-		boolean result;
-		
-		result = isEvenNumber(number);
+		boolean result = isEvenNumber(number);
 
 		if (result) {
 			System.out.println("偶数です");

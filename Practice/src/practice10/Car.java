@@ -25,9 +25,9 @@ public class Car {
 		
 		int random = (new java.util.Random().nextInt(15) + 1);
 		
-		if (this.gasoline < 0)
+		if (this.gasoline < 0) {
 			random = -1;
-		
+		}
 		this.gasoline -= 1;
 		return random;
 	}

@@ -13,20 +13,16 @@ public class PTra05_03 {
 		java.util.Scanner scanner = new java.util.Scanner(System.in);
 
 		// ★ int型の変数indexを宣言して、0で初期化してください
-		int index;
-		index = 0;
+		int index = 0;
 
 		// ★ int型の変数mountainを宣言して、0で初期化してください
-		int mountain;
-		mountain = 0;
+		int mountain = 0;
 
 		// ★ int型の変数riverを宣言して、0で初期化してください
-		int river;
-		river = 0;
+		int river = 0;
 
 		// ★ int型の変数oceanを宣言して、0で初期化してください
-		int ocean;
-		ocean = 0;
+		int ocean = 0;
 
 		// ★ 変数indexが5未満である間繰り返す条件式を記述してください
 		while (index < 5) {

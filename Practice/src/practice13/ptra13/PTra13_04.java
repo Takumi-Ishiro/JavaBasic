@@ -6,6 +6,9 @@
  */
 package practice13.ptra13;
 
+import practice13.common.Hero;
+import practice13.common.Slime;
+
 public class PTra13_04 {
 
 	/*
@@ -16,8 +19,8 @@ public class PTra13_04 {
 
 		// ★ HeroインスタンスとSlimeインスタンスを作成し、それぞれの名前に"勇者", "スライム"を設定してください
 
-		practice13.common.Hero hero = new practice13.common.Hero();
-		practice13.common.Slime slime = new practice13.common.Slime();
+		Hero hero = new Hero();
+		Slime slime = new Slime();
 		
 		hero.setName("勇者");
 		slime.setName("スライム");
@@ -30,15 +33,17 @@ public class PTra13_04 {
 		boolean flagHero = false;
 		boolean flagSlime = false;
 		
-		for(; flagHero == false;) {
+		while(flagHero == false){
 			
 			int heroAtk = hero.attack();
+			System.out.println(hero.getName() + "の攻撃！");
 			flagSlime = slime.damage(heroAtk);
 			if (flagSlime == true) {
 				break;
 			}
 			
 			int slimeAtk = slime.attack();
+			System.out.println(slime.getName() + "の攻撃！");
 			flagHero = hero.damage(slimeAtk);
 			
 		}

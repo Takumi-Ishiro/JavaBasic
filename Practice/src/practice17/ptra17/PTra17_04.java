@@ -18,9 +18,8 @@ public class PTra17_04 {
 		
 		String[] array = str.split("");
 		
-		for (int i = 0; i < str.length(); i++) {
-		
-			System.out.print(array[i]);
+		for (String line : array) {
+			System.out.print(line);
 			
 			try {
 				Thread.sleep(3000);

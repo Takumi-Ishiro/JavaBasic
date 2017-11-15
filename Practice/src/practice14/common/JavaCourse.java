@@ -1,7 +1,7 @@
-package practice14.ptra14;
+package practice14.common;
 
-public class JavaCourse implements practice14.common.Course {
-	
+public class JavaCourse implements Course {
+
 	/*
 	 * ★ common.Courseを実装した、JavaCourseクラスを作成してください
 	 *
